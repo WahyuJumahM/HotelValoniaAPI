@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "x5qErm4o408vvHFqJM7typbECyArBN/cXm4MtpYZpDw=",
+  "Source": "HotelValoniaAPI",
+  "BasePath": "_content/HotelValoniaAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,513 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\controllers\\adminrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\controllers\\adminrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\models\\adminrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\models\\adminrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\controllers\\jeniskamarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\controllers\\jeniskamarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\controllers\\kamarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\controllers\\kamarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\controllers\\tipekasurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\controllers\\tipekasurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\context\\tipekasurcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\context\\tipekasurcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\context\\statuscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\context\\statuscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\context\\registercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\context\\registercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\context\\logincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\context\\logincontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\context\\kamarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\context\\kamarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\context\\jeniskamarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\context\\jeniskamarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\context\\bookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\context\\bookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\context\\adminrolecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\context\\adminrolecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\context\\userrolecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\context\\userrolecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\models\\kamar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\models\\kamar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\models\\jeniskamar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\models\\jeniskamar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\models\\tipekasur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\models\\tipekasur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\helpers\\sqldbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\helpers\\sqldbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|c:\\it\\hotel valonia project\\backendwebapi\\hotelvaloniaapi\\hotelvaloniaapi\\hotelvaloniaapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{62C653C9-AF9E-42A7-9422-F41B3D62A213}|HotelValoniaAPI\\HotelValoniaAPI.csproj|solutionrelative:hotelvaloniaapi\\hotelvaloniaapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 25,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Program.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Program.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Program.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T18:09:30.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\appsettings.json",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\appsettings.json",
+              "RelativeToolTip": "HotelValoniaAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-22T18:05:05.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Controllers\\RegisterController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAcwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:56:25.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminRoleController.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\AdminRoleController.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Controllers\\AdminRoleController.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\AdminRoleController.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Controllers\\AdminRoleController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:45:19.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "sqlDBHelper.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Helpers\\sqlDBHelper.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Helpers\\sqlDBHelper.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Helpers\\sqlDBHelper.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Helpers\\sqlDBHelper.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:04:54.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TipeKasurController.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\TipeKasurController.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Controllers\\TipeKasurController.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\TipeKasurController.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Controllers\\TipeKasurController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:53:58.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KamarController.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\KamarController.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Controllers\\KamarController.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\KamarController.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Controllers\\KamarController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:53:00.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Controllers\\StatusController.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Controllers\\StatusController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAYwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:52:07.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JenisKamarController.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\JenisKamarController.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Controllers\\JenisKamarController.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\JenisKamarController.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Controllers\\JenisKamarController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:51:40.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:51:01.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserRoleController.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\UserRoleController.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Controllers\\UserRoleController.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\UserRoleController.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Controllers\\UserRoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:49:29.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:49:05.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminRoleContext.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\AdminRoleContext.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Context\\AdminRoleContext.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\AdminRoleContext.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Context\\AdminRoleContext.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAIwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:46:44.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserRoleContext.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\UserRoleContext.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Context\\UserRoleContext.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\UserRoleContext.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Context\\UserRoleContext.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAYwJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:46:13.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TipeKasurContext.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\TipeKasurContext.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Context\\TipeKasurContext.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\TipeKasurContext.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Context\\TipeKasurContext.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:45:21.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "KamarContext.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\KamarContext.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Context\\KamarContext.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\KamarContext.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Context\\KamarContext.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:44:23.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "JenisKamarContext.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\JenisKamarContext.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Context\\JenisKamarContext.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\JenisKamarContext.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Context\\JenisKamarContext.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:43:52.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StatusContext.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\StatusContext.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Context\\StatusContext.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\StatusContext.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Context\\StatusContext.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:42:54.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookingContext.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\BookingContext.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Context\\BookingContext.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\BookingContext.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Context\\BookingContext.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:39:42.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegisterContext.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\RegisterContext.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Context\\RegisterContext.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\RegisterContext.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Context\\RegisterContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:38:19.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginContext.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\LoginContext.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Context\\LoginContext.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Context\\LoginContext.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Context\\LoginContext.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAcwD8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:38:04.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TipeKasur.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\TipeKasur.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Models\\TipeKasur.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\TipeKasur.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Models\\TipeKasur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:36:20.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "JenisKamar.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\JenisKamar.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Models\\JenisKamar.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\JenisKamar.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Models\\JenisKamar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:35:57.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Kamar.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\Kamar.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Models\\Kamar.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\Kamar.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Models\\Kamar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:35:34.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\Status.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Models\\Status.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\Status.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Models\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:34:13.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Models\\Booking.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\Booking.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:33:54.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminRole.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\AdminRole.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Models\\AdminRole.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\AdminRole.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Models\\AdminRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:33:03.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\Models\\UserRole.cs",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\Models\\UserRole.cs",
+              "RelativeToolTip": "HotelValoniaAPI\\Models\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:32:44.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HotelValoniaAPI",
+              "DocumentMoniker": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\HotelValoniaAPI.csproj",
+              "RelativeDocumentMoniker": "HotelValoniaAPI\\HotelValoniaAPI.csproj",
+              "ToolTip": "C:\\IT\\HOTEL VALONIA PROJECT\\BackendWebAPI\\HotelValoniaAPI\\HotelValoniaAPI\\HotelValoniaAPI.csproj",
+              "RelativeToolTip": "HotelValoniaAPI\\HotelValoniaAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-22T15:32:17.794Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

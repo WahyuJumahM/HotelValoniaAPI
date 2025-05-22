@@ -1,0 +1,6 @@
+@HotelValoniaAPI_HostAddress = http://localhost:5166
+
+GET {{HotelValoniaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
