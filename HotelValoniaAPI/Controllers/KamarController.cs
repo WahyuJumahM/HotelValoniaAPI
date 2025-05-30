@@ -1,6 +1,7 @@
 ﻿using HotelValoniaAPI.Context;
 using HotelValoniaAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 
@@ -19,6 +20,8 @@ namespace HotelValoniaAPI.Controllers
         }
 
         // GET: api/Kamar
+        // Bisa diakses semua (bisa tanpa login, atau kalau mau hanya user yg login, tambahkan [Authorize])
+        [Authorize]
         [HttpGet]
         public ActionResult<List<Kamar>> GetAll()
         {
@@ -27,6 +30,8 @@ namespace HotelValoniaAPI.Controllers
         }
 
         // POST: api/Kamar
+        // Hanya untuk Admin
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult Insert([FromBody] Kamar kamar)
         {
@@ -42,14 +47,22 @@ namespace HotelValoniaAPI.Controllers
                 return StatusCode(500, "Gagal menambahkan data kamar.");
         }
 
-        // PUT: api/Kamar
-        [HttpPut]
-        public ActionResult Update([FromBody] Kamar kamar)
+        // PUT: api/Kamar/{id}
+        [Authorize(Roles = "Admin")]
+        [HttpPut("{id}")]
+        public ActionResult Update(int id, [FromBody] Kamar kamar)
         {
-            if (kamar == null || kamar.Id_Kamar <= 0)
+            if (kamar == null)
+            {
+                return BadRequest("Data kamar tidak valid.");
+            }
+
+            if (id <= 0)
             {
                 return BadRequest("Id kamar tidak valid.");
             }
+
+            kamar.Id_Kamar = id;
 
             bool success = _context.Update(kamar);
             if (success)
@@ -58,7 +71,10 @@ namespace HotelValoniaAPI.Controllers
                 return StatusCode(500, "Gagal memperbarui data kamar.");
         }
 
+
         // DELETE: api/Kamar/{id}
+        // Hanya untuk Admin
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
@@ -69,4 +85,5 @@ namespace HotelValoniaAPI.Controllers
                 return NotFound($"Data kamar dengan id {id} tidak ditemukan.");
         }
     }
+
 }

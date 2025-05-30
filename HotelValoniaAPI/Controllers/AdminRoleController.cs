@@ -9,7 +9,7 @@ namespace HotelValoniaAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize] // Semua role bisa akses sementara
+    [Authorize(Roles = "Admin")]
     public class AdminRoleController : ControllerBase
     {
         private readonly AdminRoleContext _context;

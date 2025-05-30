@@ -1,13 +1,8 @@
 ﻿using HotelValoniaAPI.Context;
+using HotelValoniaAPI.Helpers;
 using HotelValoniaAPI.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
 namespace HotelValoniaAPI.Controllers
 {
@@ -15,68 +10,54 @@ namespace HotelValoniaAPI.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private readonly IConfiguration _config;
         private readonly LoginContext _loginContext;
-        private readonly IConfiguration _configuration;
 
-        public AuthController(IConfiguration configuration)
+        public AuthController(IConfiguration config)
         {
-            _configuration = configuration;
-            string connString = _configuration.GetConnectionString("DefaultConnection");
-            _loginContext = new LoginContext(connString);
+            _config = config;
+            string conn = _config.GetConnectionString("DefaultConnection");
+            _loginContext = new LoginContext(conn);
         }
 
-        [HttpPost("login")]
-        public ActionResult Login([FromBody] LoginModel login)
+        [HttpPost("login-user")]
+        public ActionResult LoginUser([FromBody] LoginModel login)
         {
-            if (login == null || string.IsNullOrEmpty(login.Email) || string.IsNullOrEmpty(login.Password))
+            if (login == null || string.IsNullOrWhiteSpace(login.Email) || string.IsNullOrWhiteSpace(login.Password))
                 return BadRequest("Email dan password harus diisi.");
 
-            // Cek UserRole login
             var user = _loginContext.UserLogin(login.Email, login.Password);
-            if (user != null)
-            {
-                var token = GenerateJwtToken(user.Email, "User");
-                return Ok(new { token, role = "User", userId = user.Id_User, name = user.Nama_Lengkap });
-            }
+            if (user == null) return Unauthorized("Login user gagal.");
 
-            // Cek AdminRole login (tanpa password, karena AdminRole tidak ada password)
-            var admin = _loginContext.AdminLogin(login.Email, login.Password);
-            if (admin != null)
+            var token = JwtHelper.GenerateToken(user.Email, "User", user.Id_User, user.Nama_Lengkap, _config);
+            return Ok(new
             {
-                var token = GenerateJwtToken(admin.Email, "Admin");
-                return Ok(new { token, role = "Admin", adminId = admin.Id_Admin, name = admin.Nama });
-            }
-
-            return Unauthorized("Email atau password salah.");
+                token,
+                role = "User",
+                userId = user.Id_User,
+                name = user.Nama_Lengkap
+            });
         }
 
-        private string GenerateJwtToken(string email, string role)
+        [HttpPost("login-admin")]
+        public ActionResult LoginAdmin([FromBody] LoginModel login)
         {
-            var claims = new[]
+            if (login == null || string.IsNullOrWhiteSpace(login.Email) || string.IsNullOrWhiteSpace(login.Password))
+                return BadRequest("Email dan password harus diisi.");
+
+            var admin = _loginContext.AdminLogin(login.Email, login.Password);
+            if (admin == null) return Unauthorized("Login admin gagal.");
+
+            var token = JwtHelper.GenerateToken(admin.Email, "Admin", admin.Id_Admin, admin.Nama, _config);
+            return Ok(new
             {
-                new Claim(ClaimTypes.Email, email),
-                new Claim(ClaimTypes.Role, role)
-            };
-
-            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                issuer: _configuration["JwtSettings:Issuer"],
-                audience: _configuration["JwtSettings:Audience"],
-                claims: claims,
-                expires: DateTime.Now.AddHours(3),
-                signingCredentials: creds
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
+                token,
+                role = "Admin",
+                adminId = admin.Id_Admin,
+                name = admin.Nama
+            });
         }
-    }
 
-    // Model login untuk input
-    public class LoginModel
-    {
-        public string Email { get; set; }
-        public string Password { get; set; }
     }
 }
+

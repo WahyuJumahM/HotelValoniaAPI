@@ -1,5 +1,6 @@
 ﻿using HotelValoniaAPI.Context;
 using HotelValoniaAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ namespace HotelValoniaAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class JenisKamarController : ControllerBase
     {
         private readonly JenisKamarContext _context;
@@ -42,14 +44,23 @@ namespace HotelValoniaAPI.Controllers
                 return StatusCode(500, "Gagal menambahkan jenis kamar.");
         }
 
-        // PUT: api/JenisKamar
-        [HttpPut]
-        public ActionResult Update([FromBody] JenisKamar jenisKamar)
+        // PUT: api/JenisKamar/{id}
+        [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
+        public ActionResult Update(int id, [FromBody] JenisKamar jenisKamar)
         {
-            if (jenisKamar == null || jenisKamar.Id_Jenis_Kamar <= 0)
+            if (jenisKamar == null)
+            {
+                return BadRequest("Data jenis kamar tidak valid.");
+            }
+
+            if (id <= 0)
             {
                 return BadRequest("Id jenis kamar tidak valid.");
             }
+
+            // Pastikan id dari route sama dengan id di objek, atau override
+            jenisKamar.Id_Jenis_Kamar = id;
 
             bool success = _context.Update(jenisKamar);
             if (success)
@@ -57,6 +68,7 @@ namespace HotelValoniaAPI.Controllers
             else
                 return StatusCode(500, "Gagal memperbarui jenis kamar.");
         }
+
 
         // DELETE: api/JenisKamar/{id}
         [HttpDelete("{id}")]

@@ -1,5 +1,6 @@
 ﻿using HotelValoniaAPI.Context;
 using HotelValoniaAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ namespace HotelValoniaAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class TipeKasurController : ControllerBase
     {
         private readonly TipeKasurContext _context;
@@ -20,6 +22,7 @@ namespace HotelValoniaAPI.Controllers
 
         // GET: api/TipeKasur
         [HttpGet]
+        [Authorize]
         public ActionResult<List<TipeKasur>> GetAll()
         {
             var list = _context.GetAll();
@@ -40,12 +43,17 @@ namespace HotelValoniaAPI.Controllers
                 return StatusCode(500, "Gagal menambahkan tipe kasur.");
         }
 
-        // PUT: api/TipeKasur
-        [HttpPut]
-        public ActionResult Update([FromBody] TipeKasur tipe)
+        // PUT: api/TipeKasur/{id}
+        [HttpPut("{id}")]
+        public ActionResult Update(int id, [FromBody] TipeKasur tipe)
         {
-            if (tipe == null || tipe.Id_Tipe_Kasur <= 0 || string.IsNullOrEmpty(tipe.Tipe_Kasur))
+            if (tipe == null || string.IsNullOrEmpty(tipe.Tipe_Kasur))
                 return BadRequest("Data tipe kasur tidak valid.");
+
+            if (id <= 0)
+                return BadRequest("Id tipe kasur tidak valid.");
+
+            tipe.Id_Tipe_Kasur = id;
 
             bool success = _context.Update(tipe);
             if (success)
