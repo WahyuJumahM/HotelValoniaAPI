@@ -35,15 +35,29 @@ namespace HotelValoniaAPI.Context
             return affectedRows > 0;
         }
 
-        // READ all UserRole
-        public List<UserRole> GetAllUsers()
+        // READ UserRole
+        public List<UserRole> GetAllUsers(string role, int idUser)
         {
             List<UserRole> listUsers = new List<UserRole>();
-            string query = "SELECT * FROM UserRole ORDER BY id_user";
+            string query;
+
+            if (role == "Admin")
+            {
+                query = "SELECT * FROM UserRole ORDER BY id_user";
+            }
+            else
+            {
+                query = "SELECT * FROM UserRole WHERE id_user = @id_user";
+            }
 
             using var cmd = dbHelper.GetNpgsqlCommand(query);
-            using NpgsqlDataReader reader = cmd.ExecuteReader();
 
+            if (role != "Admin")
+            {
+                cmd.Parameters.AddWithValue("id_user", idUser);
+            }
+
+            using NpgsqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
                 UserRole user = new UserRole()
@@ -61,6 +75,9 @@ namespace HotelValoniaAPI.Context
             dbHelper.closeConnection();
             return listUsers;
         }
+
+
+
 
         // READ by ID
         public UserRole? GetUserById(int id)

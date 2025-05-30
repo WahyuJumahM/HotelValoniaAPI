@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "HotelApi",
+    "title": "HotelValonia API",
     "version": "v1"
   },
   "paths": {
@@ -173,7 +173,38 @@
         }
       }
     },
-    "/api/Auth/login": {
+    "/api/Auth/login-user": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/login-admin": {
       "post": {
         "tags": [
           "Auth"
@@ -359,10 +390,23 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/JenisKamar/{id}": {
       "put": {
         "tags": [
           "JenisKamar"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -388,9 +432,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/JenisKamar/{id}": {
+      },
       "delete": {
         "tags": [
           "JenisKamar"
@@ -478,10 +520,23 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Kamar/{id}": {
       "put": {
         "tags": [
           "Kamar"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -507,9 +562,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/Kamar/{id}": {
+      },
       "delete": {
         "tags": [
           "Kamar"
@@ -599,40 +652,24 @@
             }
           }
         }
-      },
-      "post": {
-        "tags": [
-          "Status"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Status"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Status"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Status"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
+      }
+    },
+    "/api/Status/{id}": {
       "put": {
         "tags": [
           "Status"
         ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -657,9 +694,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/Status/{id}": {
+      },
       "delete": {
         "tags": [
           "Status"
@@ -747,10 +782,23 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/TipeKasur/{id}": {
       "put": {
         "tags": [
           "TipeKasur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -776,9 +824,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/TipeKasur/{id}": {
+      },
       "delete": {
         "tags": [
           "TipeKasur"
@@ -987,6 +1033,10 @@
             "type": "string",
             "nullable": true
           },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
           "no_Handphone": {
             "type": "integer",
             "format": "int64"
@@ -1178,7 +1228,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
-        "description": "Masukkan token JWT: Bearer {token}",
+        "description": "Masukkan token JWT dengan format: Bearer {token}",
         "name": "Authorization",
         "in": "header"
       }

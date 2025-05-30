@@ -55,6 +55,33 @@ namespace HotelValoniaAPI.Context
             dbHelper.closeConnection();
             return list;
         }
+        public List<Booking> GetByUserId(int userId)
+        {
+            var list = new List<Booking>();
+            string query = "SELECT * FROM Booking WHERE id_user = @id_user ORDER BY id_booking";
+            using var cmd = dbHelper.GetNpgsqlCommand(query);
+            cmd.Parameters.AddWithValue("id_user", userId);
+            using var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                list.Add(new Booking()
+                {
+                    Id_Booking = reader.GetInt32(reader.GetOrdinal("id_booking")),
+                    Catatan = reader.IsDBNull(reader.GetOrdinal("catatan")) ? null : reader.GetString(reader.GetOrdinal("catatan")),
+                    Cek_In = reader.GetDateTime(reader.GetOrdinal("cek_in")),
+                    Cek_Out = reader.GetDateTime(reader.GetOrdinal("cek_out")),
+                    Id_User = reader.GetInt32(reader.GetOrdinal("id_user")),
+                    Id_Admin = reader.GetInt32(reader.GetOrdinal("id_admin")),
+                    Id_Kamar = reader.GetInt32(reader.GetOrdinal("id_kamar")),
+                    Id_Status = reader.GetInt32(reader.GetOrdinal("id_status"))
+                });
+            }
+            dbHelper.closeConnection();
+            return list;
+        }
+
+
+
 
         public bool Delete(int id)
         {

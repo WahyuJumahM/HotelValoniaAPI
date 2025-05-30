@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
+using System.Security.Claims;
 
 namespace HotelValoniaAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]  // Saat ini authorize tanpa role khusus, semua user bisa akses
     public class UserRoleController : ControllerBase
     {
         private readonly UserRoleContext _context;
@@ -22,13 +22,27 @@ namespace HotelValoniaAPI.Controllers
 
         // GET: api/UserRole
         [HttpGet]
+        [Authorize]
         public ActionResult<List<UserRole>> GetAllUsers()
         {
-            var users = _context.GetAllUsers();
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+            var userIdClaim = User.FindFirst("userId")?.Value;
+            int.TryParse(userIdClaim, out int userId);
+
+            // Ambil data sesuai role dari token, bukan dari kolom role di database
+            var users = _context.GetAllUsers(role, userId);
+
+            if (users == null || users.Count == 0)
+                return NotFound("Data user tidak ditemukan.");
+
             return Ok(users);
         }
 
+
+
+
         // GET: api/UserRole/5
+        [Authorize(Roles = "Admin")]
         [HttpGet("{id}")]
         public ActionResult<UserRole> GetUserById(int id)
         {
@@ -39,6 +53,7 @@ namespace HotelValoniaAPI.Controllers
         }
 
         // POST: api/UserRole
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult CreateUser([FromBody] UserRole newUser)
         {
@@ -49,6 +64,7 @@ namespace HotelValoniaAPI.Controllers
         }
 
         // PUT: api/UserRole/5
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public ActionResult UpdateUser(int id, [FromBody] UserRole updatedUser)
         {
@@ -66,6 +82,7 @@ namespace HotelValoniaAPI.Controllers
         }
 
         // DELETE: api/UserRole/5
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public ActionResult DeleteUser(int id)
         {
